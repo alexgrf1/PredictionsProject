@@ -1,0 +1,292 @@
+@import 'reset';
+
+$font: "Arial, Hel vetica", sans-serif;
+$color: rgb(218, 47, 47);
+$backcolor: rgb(10, 194, 146);
+$colorpurple: rgb(128,7, 147);
+
+.players {
+	position: absolute;
+	top:21%;
+}
+
+.shadow {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.hover {
+	text-shadow: 0px 0 1px $colorpurple;
+}
+
+.style-button {
+	border: 0px solid black;
+	height:10%;
+	width:4%;
+	background-color:transparent;
+	background-color:$color;
+	color:$colorpurple;
+}
+
+.style-form {
+	height:25%;
+	width:13%;
+	position:relative;
+	left:81%;
+	top:13%;
+}
+
+body {
+	font-family: $font;
+	background-color:$backcolor;
+}
+
+header {
+	img {
+		height:35px;
+		width:auto;
+	}
+	#logo {
+		height:150px;
+		width:auto;
+		float:left;
+		margin:0.5% 4% 0 2.4%;
+	}
+	#logo:hover {
+		cursor:pointer;
+	}
+	a {
+		text-decoration:none;
+		color:$backcolor;
+	}
+	a:link {
+		color:$backcolor;
+		text-decoration:none;
+	}
+
+	a:visited {
+    	color: $backcolor;
+	}
+	#link li:hover {
+		background-color:$backcolor;
+		opacity: 0.7;
+		@extend .hover;
+	}
+	ul li {
+		float:left;
+		width:2.2%;
+	}
+	#teams li {
+		margin:1% 0 0 1.8%;
+	}
+	#teams img:hover {
+		height:45px;
+		width:auto;
+		cursor:pointer;
+	}
+	.clear nav {
+		width:84.4%;
+		background-color:$color;
+		height:7.5%;
+		position:absolute;
+		top:7.5%;
+		left: 16%;
+	}
+	#link li {
+		height:50px;
+		padding-top:1.8%;
+		width:9%;
+		text-align:center;
+	}
+
+}
+
+.clear {
+		clear:both;
+}
+
+section {
+	margin-top:1.7%;
+	#players h1 {
+		font-size:250%;
+		padding:3% 0 0 20%;
+	}
+	div img{
+		height: 42%;
+	}
+	#players {
+		height:400px;
+		background-color: $colorpurple;
+		color:$backcolor;
+			form {
+				height: 130px;
+				width: 24.5%;
+				position:relative;
+				top: 40px;
+				left:20%;
+				background-color:$backcolor;
+				color: $colorpurple;
+				padding-top:0.4%;
+			}
+			#registerForm {
+				height:190px;
+				width: 15%;
+				#reg {
+					height:18%;
+					width:21%;
+					position:relative;
+					left:70%;
+					bottom:35px;
+				}
+			}
+			#login, #signup {
+				@extend .style-button;
+				position:relative;
+				top:40px;
+				left:20%;
+				margin-right:0.2%;
+			}
+			#login:hover, #signup:hover {
+				@extend .hover;
+				opacity: 0.9;
+			}
+			#login {
+				background-color:$backcolor;
+			}
+	}
+	#aguero {
+		@extend .players;
+		left:66%;
+	}
+	#neymar {
+		@extend .players;
+		left:53%;
+	}
+	#ronaldo {
+		@extend .players;
+		left:61%;
+	}
+	#rooney {
+		@extend .players;
+		left:68.7%;
+	}
+	form input {
+		margin:6% 0 0 2.6%;
+		height:14%;
+	}
+	#registerForm input {
+		display:block;
+	}
+	#go, #reg, #addPredictions, #standings {
+		@extend .style-button;
+		@extend .style-form;
+	}
+	#addPredictions, #standings {
+		width:5.9%;
+		height:50px;
+		position:relative;
+		top:14px;
+		left:79.4%;
+		color:$backcolor;
+		cursor: pointer;
+		margin-bottom:2%;
+	}
+	#classification {
+		margin-bottom:3%;
+	}
+	#addPredictions:hover, #standings:hover {
+			opacity:0.7;
+		}
+	.success {
+		color:$backcolor;
+		font-size:250%;
+		margin-top:5%;
+		padding-left:20px;
+	}
+	#myPredictions input {
+		background-color:$color;
+		color:$backcolor;
+		width:6%;
+	}
+	table {
+		margin: 0 auto;
+		margin-top: 5%;
+		background-color: $color;
+		color: $backcolor;
+		td, th {
+			text-align:center;
+			height:30px;
+			width:220px;
+			padding-top:1.5%;
+		}
+		#tablebody tr:hover {
+			background-color:$colorpurple;
+			@extend .hover;
+		}
+		.left {
+			text-align:right;
+			width:200px;
+		}
+		.right {
+			text-align:left;
+		}
+		.middle {
+			width:50px;
+		}
+	}
+	#register form {
+		margin: 0 auto;
+		margin-top:4%;
+		margin-bottom:4%;
+		height: 230px;
+		width: 40%;
+		background-color:$colorpurple;
+		color:$backcolor;
+		border-radius:25px;
+		button {
+			margin-top:2%;
+			margin-left:38%;
+			@extend .style-button;
+			width:150px;
+			height: 20%;
+			color:$backcolor;
+			cursor:pointer;
+		}
+		button:hover {
+			opacity:0.7;
+		}
+		h1, p {
+			padding: 2.3% 2% 2% 3%;
+		}
+		h1 {
+			font-size:200%;
+		}
+	}
+}
+
+footer {
+
+	height:130px;
+	padding-top:3%;
+	background-color:$color;
+	text-align:center;
+	p {
+		padding-bottom:0.4%;
+	}
+	div {
+		margin-left:46.3%;
+		padding-top:1%;
+	}
+	i {
+		float:left;
+		padding-right:1.4%;
+		color:$backcolor;
+	}
+	#copyright {
+		color:$backcolor;
+	}
+	a {
+		cursor:pointer;
+	}
+}

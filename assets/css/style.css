@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.players, section #aguero, section #neymar, section #ronaldo, section #rooney {
+  position: absolute;
+  top: 21%; }
+
+.shadow {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.hover, header #link li:hover, section #players #login:hover, section #players #signup:hover, section table #tablebody tr:hover {
+  text-shadow: 0px 0 1px #800793; }
+
+.style-button, section #players #login, section #players #signup, section #go, section #reg, section #addPredictions, section #standings, section #register form button {
+  border: 0px solid black;
+  height: 10%;
+  width: 4%;
+  background-color: transparent;
+  background-color: #da2f2f;
+  color: #800793; }
+
+.style-form, section #go, section #reg, section #addPredictions, section #standings {
+  height: 25%;
+  width: 13%;
+  position: relative;
+  left: 81%;
+  top: 13%; }
+
+body {
+  font-family: "Arial, Helvetica", sans-serif;
+  background-color: #0ac292; }
+
+header img {
+  height: 35px;
+  width: auto; }
+header #logo {
+  height: 150px;
+  width: auto;
+  float: left;
+  margin: 0.5% 4% 0 2.4%; }
+header #logo:hover {
+  cursor: pointer; }
+header a {
+  text-decoration: none;
+  color: #0ac292; }
+header a:link {
+  color: #0ac292;
+  text-decoration: none; }
+header a:visited {
+  color: #0ac292; }
+header #link li:hover {
+  background-color: #0ac292;
+  opacity: 0.7; }
+header ul li {
+  float: left;
+  width: 2.2%; }
+header #teams li {
+  margin: 1% 0 0 1.8%; }
+header #teams img:hover {
+  height: 45px;
+  width: auto;
+  cursor: pointer; }
+header .clear nav {
+  width: 84.4%;
+  background-color: #da2f2f;
+  height: 7.5%;
+  position: absolute;
+  top: 7.5%;
+  left: 16%; }
+header #link li {
+  height: 50px;
+  padding-top: 1.8%;
+  width: 9%;
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+section {
+  margin-top: 1.7%; }
+  section #players h1 {
+    font-size: 250%;
+    padding: 3% 0 0 20%; }
+  section div img {
+    height: 42%; }
+  section #players {
+    height: 400px;
+    background-color: #800793;
+    color: #0ac292; }
+    section #players form {
+      height: 130px;
+      width: 24.5%;
+      position: relative;
+      top: 40px;
+      left: 20%;
+      background-color: #0ac292;
+      color: #800793;
+      padding-top: 0.4%; }
+    section #players #registerForm {
+      height: 190px;
+      width: 15%; }
+      section #players #registerForm #reg {
+        height: 18%;
+        width: 21%;
+        position: relative;
+        left: 70%;
+        bottom: 35px; }
+    section #players #login, section #players #signup {
+      position: relative;
+      top: 40px;
+      left: 20%;
+      margin-right: 0.2%; }
+    section #players #login:hover, section #players #signup:hover {
+      opacity: 0.9; }
+    section #players #login {
+      background-color: #0ac292; }
+  section #aguero {
+    left: 66%; }
+  section #neymar {
+    left: 53%; }
+  section #ronaldo {
+    left: 61%; }
+  section #rooney {
+    left: 68.7%; }
+  section form input {
+    margin: 6% 0 0 2.6%;
+    height: 14%; }
+  section #registerForm input {
+    display: block; }
+  section #addPredictions, section #standings {
+    width: 5.9%;
+    height: 50px;
+    position: relative;
+    top: 14px;
+    left: 79.4%;
+    color: #0ac292;
+    cursor: pointer;
+    margin-bottom: 2%; }
+  section #classification {
+    margin-bottom: 3%; }
+  section #addPredictions:hover, section #standings:hover {
+    opacity: 0.7; }
+  section .success {
+    color: #0ac292;
+    font-size: 250%;
+    margin-top: 5%;
+    padding-left: 20px; }
+  section #myPredictions input {
+    background-color: #da2f2f;
+    color: #0ac292;
+    width: 6%; }
+  section table {
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: #da2f2f;
+    color: #0ac292; }
+    section table td, section table th {
+      text-align: center;
+      height: 30px;
+      width: 220px;
+      padding-top: 1.5%; }
+    section table #tablebody tr:hover {
+      background-color: #800793; }
+    section table .left {
+      text-align: right;
+      width: 200px; }
+    section table .right {
+      text-align: left; }
+    section table .middle {
+      width: 50px; }
+  section #register form {
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 230px;
+    width: 40%;
+    background-color: #800793;
+    color: #0ac292;
+    border-radius: 25px; }
+    section #register form button {
+      margin-top: 2%;
+      margin-left: 38%;
+      width: 150px;
+      height: 20%;
+      color: #0ac292;
+      cursor: pointer; }
+    section #register form button:hover {
+      opacity: 0.7; }
+    section #register form h1, section #register form p {
+      padding: 2.3% 2% 2% 3%; }
+    section #register form h1 {
+      font-size: 200%; }
+
+footer {
+  height: 130px;
+  padding-top: 3%;
+  background-color: #da2f2f;
+  text-align: center; }
+  footer p {
+    padding-bottom: 0.4%; }
+  footer div {
+    margin-left: 46.3%;
+    padding-top: 1%; }
+  footer i {
+    float: left;
+    padding-right: 1.4%;
+    color: #0ac292; }
+  footer #copyright {
+    color: #0ac292; }
+  footer a {
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
